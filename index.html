@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="country-app">
+        <h1>🌍 Country Info</h1>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="country-input"
+                placeholder="Enter country name"
+            >
+            <button id="search-btn" type="button">Search</button>
+        </div>
+
+        <!-- Error Message -->
+        <p class="error-message" id="error-message">
+            ❌ Country not found. Please try again.
+        </p>
+
+        <!-- Country Info Card -->
+        <div class="country-card" id="country-card">
+            <img id="flag" src="" alt="Country Flag">
+
+            <h2 id="country-name">Country Name</h2>
+
+            <div class="country-details">
+                <p><strong>Capital:</strong> <span id="capital">--</span></p>
+                <p><strong>Population:</strong> <span id="population">--</span></p>
+                <p><strong>Region:</strong> <span id="region">--</span></p>
+                <p><strong>Currency:</strong> <span id="currency">--</span></p>
+            </div>
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

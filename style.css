@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.country-app {
+    background: #ffffff;
+    width: 340px;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.country-app h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Search */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    border-color: #2193b0;
+}
+
+/* Button */
+.search-box button {
+    padding: 10px 14px;
+    border: none;
+    background-color: #2193b0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #197c96;
+}
+
+/* Error Message */
+.error-message {
+    display: none;
+    color: #e63946;
+    background-color: #ffe5e5;
+    border: 1px solid #e63946;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Country Card */
+.country-card {
+    display: none; /* show after data loads */
+    margin-top: 10px;
+}
+
+.country-card img {
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Country Name */
+.country-card h2 {
+    margin-bottom: 12px;
+    color: #222;
+}
+
+/* Details */
+.country-details p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #555;
+}
+
